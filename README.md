@@ -2,7 +2,6 @@
 
 # asdf-ec2-instance-selector [![Build](https://github.com/theoremlp/asdf-ec2-instance-selector/actions/workflows/build.yml/badge.svg)](https://github.com/theoremlp/asdf-ec2-instance-selector/actions/workflows/build.yml) [![Lint](https://github.com/theoremlp/asdf-ec2-instance-selector/actions/workflows/lint.yml/badge.svg)](https://github.com/theoremlp/asdf-ec2-instance-selector/actions/workflows/lint.yml)
 
-
 [ec2-instance-selector](https://github.com/aws/amazon-ec2-instance-selector) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
@@ -11,15 +10,11 @@
 
 - [Dependencies](#dependencies)
 - [Install](#install)
-- [Contributing](#contributing)
 - [License](#license)
 
 # Dependencies
 
-**TODO: adapt this section**
-
-- `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+n/a
 
 # Install
 
@@ -50,12 +45,6 @@ ec2-instance-selector --help
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
 install & manage versions.
 
-# Contributing
-
-Contributions of any kind welcome! See the [contributing guide](contributing.md).
-
-[Thanks goes to these contributors](https://github.com/theoremlp/asdf-ec2-instance-selector/graphs/contributors)!
-
 # License
 
-See [LICENSE](LICENSE) © [Mark Elliot](https://github.com/theoremlp/)
+See [LICENSE](LICENSE) © [Theorem](https://github.com/theoremlp/)
