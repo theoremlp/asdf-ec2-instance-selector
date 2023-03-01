@@ -34,11 +34,14 @@ list_all_versions() {
 }
 
 download_release() {
-  local version filename url
+  local version filename url platform arch variant
   version="$1"
   filename="$2"
+  platform="$(uname | tr '[:upper:]' '[:lower:]')"
+  arch="$(arch)"
+  variant="${platform}-${arch}"
 
-  url="$GH_REPO/releases/download/v${version}/v${version}.tar.gz"
+  url="$GH_REPO/releases/download/v${version}/ec2-instance-selector-${variant}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
