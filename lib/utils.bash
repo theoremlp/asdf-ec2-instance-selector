@@ -39,6 +39,9 @@ download_release() {
   filename="$2"
   platform="$(uname | tr '[:upper:]' '[:lower:]')"
   arch="$(arch)"
+  if [ $arch == "x86_64" ]; then
+    arch="amd64"
+  fi
   variant="${platform}-${arch}"
 
   url="$GH_REPO/releases/download/v${version}/ec2-instance-selector-${variant}.tar.gz"
