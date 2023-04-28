@@ -39,7 +39,7 @@ download_release() {
   filename="$2"
   platform="$(uname | tr '[:upper:]' '[:lower:]')"
   arch="$(arch)"
-  if [ $arch == "x86_64" ]; then
+  if [ $arch == "x86_64" ] || [ $arch == "i386" ]; then
     arch="amd64"
   fi
   variant="${platform}-${arch}"
